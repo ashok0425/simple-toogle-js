@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d-none {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="banner">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sequi vitae amet iste natus maiores
+        dicta quo earum ipsam excepturi!
+
+    </div>
+
+
+    <button class="banner-close">Hide banner</button>
+
+    <script>
+
+
+
+
+        document.querySelector('.banner-close').addEventListener('click', function () {
+            let banner = document.getElementById('banner');
+            if (banner.style.display=='block') {
+                
+                this.innerHTML = 'show banner'
+banner.style.display='none'
+            } else {
+banner.style.display='block'
+
+                this.innerHTML = 'Hide banner'
+
+            }
+        })
+
+    </script>
+</body>
+
+</html>
